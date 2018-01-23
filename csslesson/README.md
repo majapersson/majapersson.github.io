@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 <iframe width="50%" height="300px" src="https://majapersson.github.io/csslesson/pacman.html"></iframe>
+=======
+<iframe width="550px" height="250px" src="https://majapersson.github.io/csslesson/pacman.html" style="border: none; overflow: hidden;"></iframe>
+>>>>>>> de3133462663e8bacb06649a8d265392e1e13510
 # CSS Animations and transitions
-Today we'll learn how and when to use animations and transitions in CSS.
+Today we'll learn how to use animations and transitions in CSS.
 
 ## Transitions
 > CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time. For example, if you change the color of an element from white to black, usually the change is instantaneous. With CSS transitions enabled, changes occur at time intervals that follow an acceleration curve, all of which can be customized. - [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
