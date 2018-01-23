@@ -1,4 +1,4 @@
-<iframe src="https://majapersson.github.io/csslesson/pacman.html"></iframe>
+<iframe width="50%" height="300px" src="https://majapersson.github.io/csslesson/pacman.html"></iframe>
 # CSS Animations and transitions
 Today we'll learn how and when to use animations and transitions in CSS.
 
