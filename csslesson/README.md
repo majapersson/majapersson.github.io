@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-<iframe width="50%" height="300px" src="https://majapersson.github.io/csslesson/pacman.html"></iframe>
-=======
+---
+title: Animation
+---
+
 <iframe width="550px" height="250px" src="https://majapersson.github.io/csslesson/pacman.html" style="border: none; overflow: hidden;"></iframe>
->>>>>>> de3133462663e8bacb06649a8d265392e1e13510
 # CSS Animations and transitions
 Today we'll learn how to use animations and transitions in CSS.
 

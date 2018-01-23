@@ -7,28 +7,29 @@
   <title>Transition-timing-function</title>
   <style media="screen">
     .box {
+      animation: move 2s forwards infinite;
       background-color: darkorange;
       height: 50px;
       width: 50px;
     }
 
     .one {
-      animation: move 2s ease forwards;
+      animation-timing-function: ease;
     }
     .two {
-      animation: move 2s ease-in forwards;
+      animation-timing-function: ease-in;
     }
     .three {
-      animation: move 2s ease-out forwards;
+      animation-timing-function: ease-out;
     }
     .four {
-      animation: move 2s ease-in-out forwards;
+      animation-timing-function: ease-in-out;
     }
     .five {
-      animation: move 2s linear forwards;
+      animation-timing-function: linear;
     }
     .six {
-      animation: move 2s steps(6) forwards;
+      animation-timing-function: steps(6);
     }
 
     @keyframes move {
