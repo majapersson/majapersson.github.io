@@ -1,0 +1,142 @@
+body {
+  background-color: black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pacman {
+  * {
+  background-color: yellow;
+  height: 25px;
+  margin: 0 1em;
+  width: 50px;
+  }
+  .up {
+  animation: wakkaUp .3s linear infinite alternate;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  align-items: center;
+    .eye {
+    background-color: black;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    }
+  }
+  .down {
+  animation: wakkaDown .3s linear infinite alternate;
+  border-radius: 0 0 25px 25px;
+  }
+}
+
+.dot {
+  animation: dotMovement .6s infinite;
+  background-color: orange;
+  border-radius: 50%;
+  box-shadow: 30px 0px orange, -30px 0px orange, -60px 0px orange, -90px 0px orange;
+  height: 10px;
+  margin: .8em;
+  position: relative;
+  width: 10px;
+}
+
+.ghost {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 60px;
+  margin: 0 .5em;
+  position: relative;
+  width: 45px;
+  .body {
+    border-radius: 45% 45% 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 45px;
+  }
+  .dot {
+    animation: none;
+    box-shadow: none;
+    height: 15px;
+    margin: 0;
+    position: relative;
+    top: -7px;
+    width: 15px;
+  }
+  .eye {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 15px;
+    .pupil {
+      background-color: black;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+  }
+}
+
+.blinky {
+  .body, .dot {
+    background-color: red;
+  }
+}
+
+.pinky {
+  animation: hover .7s linear .3s infinite alternate;
+  .body, .dot {
+    background-color: pink;
+  }
+}
+
+.inky {
+  animation: hover .5s linear .2s infinite alternate;
+  .body, .dot {
+    background-color: skyblue;
+  }
+}
+
+.clyde {
+  animation: hover .3s linear infinite alternate;
+  .body, .dot {
+    background-color: orange;
+  }
+}
+
+@keyframes wakkaUp {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes wakkaDown {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes hover {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes dotMovement {
+  100% {
+    transform: translateX(27px);
+  }
+}
