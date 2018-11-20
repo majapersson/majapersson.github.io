@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <title>Infinite World</title>
+    <style>
+      body {
+        background-color: #333;
+        margin: 0;
+      }
+      canvas {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+  <script type="text/javascript">
+    let offset = 0;
+    function setup() {
+    	createCanvas(400, 400);
+    	background(255);
+    		for(let i = 0; i < width; i++) {
+    		if(i < width / 2) {
+    			line(i, random(height), i, height);
+    		} else {
+    			offset += 0.01;
+    			line(i, height, i, noise(offset)* height);
+    		}
+    	}
+    }
+  </script>
+  </body>
+</html>
